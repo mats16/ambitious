@@ -14,18 +14,27 @@ There are four ways to ask a model for more. **Speed** (the same work in less ti
 
 ## Install
 
-Claude Code:
+Claude Code (`/ambitious:ambitious`, `/ambitious:ambitious-review`):
 
 ```sh
 claude plugin marketplace add mats16/ambitious
 claude plugin install ambitious@ambitious
 ```
 
-pi:
+Codex (reads the same `.claude-plugin/` manifests; skills appear as `ambitious:ambitious` and `ambitious:ambitious-review`):
+
+```sh
+codex plugin marketplace add mats16/ambitious
+codex plugin add ambitious@ambitious
+```
+
+pi (`/skill:ambitious`, `/skill:ambitious-review`; add `-l` to install for the current project only):
 
 ```sh
 pi install git:github.com/mats16/ambitious
 ```
+
+With `-l`, pi reads the package only in a trusted project. Save the trust with `/trust` once in interactive pi before running it from a scheduled task (`pi -p` cannot ask).
 
 ## Use
 
