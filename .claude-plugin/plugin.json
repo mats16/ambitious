@@ -1,0 +1,8 @@
+{
+  "name": "ambitious",
+  "description": "Push a task further than it was asked: altitude (the outcome behind the task), depth (what a top expert would use and check), and range (skills borrowed from other fields). Use on the task in front of you, or as lenses for a periodic review of logs.",
+  "author": { "name": "mats16" },
+  "license": "MIT",
+  "repository": "https://github.com/mats16/ambitious",
+  "keywords": ["thinking", "ambition", "review", "retrospective", "skills"]
+}

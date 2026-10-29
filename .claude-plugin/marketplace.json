@@ -1,0 +1,13 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ambitious",
+  "description": "Skills for being more ambitious with models: altitude, depth, and range.",
+  "owner": { "name": "mats16" },
+  "plugins": [
+    {
+      "name": "ambitious",
+      "description": "Deep-dive and develop a task along altitude, depth, and range, or review logs through the same lenses.",
+      "source": "./"
+    }
+  ]
+}

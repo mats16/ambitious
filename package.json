@@ -1,0 +1,9 @@
+{
+  "name": "ambitious",
+  "private": true,
+  "license": "MIT",
+  "description": "Skills for being more ambitious with models: altitude, depth, and range.",
+  "keywords": ["pi-package"],
+  "repository": { "type": "git", "url": "git+https://github.com/mats16/ambitious.git" },
+  "pi": { "skills": ["./skills"] }
+}
