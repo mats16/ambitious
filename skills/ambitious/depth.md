@@ -1,8 +1,3 @@
----
-name: depth
-description: Do a task the way the best expert in the world would — "a deeper version of this task, not a bigger one". Starts from the expert's raw materials and instruments (databases, statistics, profilers, simulations) instead of their vocabulary, sets an unreasonable target, re-derives a load-bearing assumption from raw data, looks for new knowledge, and defines an outside judge instead of grading its own work. Use when asked 「もっと深く」「専門家ならどうする」「裏付けて」「本当にそうか確かめて」「目標を上げて」, "go deeper", "what would an expert do", when an answer rests on estimates where data was reachable, or as one lens of `ambitious`.
----
-
 # Depth: work like a top expert
 
 The core ask: **"I want a deeper version of this task, not a bigger one."** Depth is not more pages or more items. It is the expert's material, methods, targets, and checks. A deeper result is often shorter.

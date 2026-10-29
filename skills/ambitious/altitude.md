@@ -1,8 +1,3 @@
----
-name: altitude
-description: Raise the altitude of a task — think about the outcome it is for instead of the task itself. Ladders up from the task to the outcome, to a durable system that keeps producing the outcome, to a redesign of the process, and names the setup the higher version needs (access, data, environments). Use when asked 「目的から考え直して」「そもそも何のため」「もっと上の視点で」「仕組みにできないか」, "what is this really for", "make this durable", when the same kind of request keeps coming back, or as one lens of `ambitious`.
----
-
 # Altitude: the outcome, not the task
 
 A task is one step toward something the user wants to happen. Working at a higher altitude means serving that outcome directly, and, when it recurs, building something that keeps producing it.

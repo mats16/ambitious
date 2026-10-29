@@ -1,8 +1,3 @@
----
-name: range
-description: Widen the range of a task by borrowing from other fields. Restates the deliverable as verbs instead of nouns (what it must get done, for whom, under what constraint), finds the fields that do each verb best, assembles a crew of 3–5 roles including an adversary, and has each role do its actual work on the task (not role-play its voice). Use when asked 「別の分野ならどうする」「視点を変えて」「いろんな立場で見て」「レッドチームして」, "look at this from other angles", "who else should look at this", when a deliverable is framed only as a noun ("a deck", "a report"), or as one lens of `ambitious`.
----
-
 # Range: borrow from other fields
 
 Most tasks arrive as nouns: a deck, a report, a dashboard, a fix. Nouns hide the skills the work needs. Verbs reveal them, and point to the fields that are best at each verb. (The nouns-to-verbs move is from Tom Kelley's *The Art of Innovation*.)
