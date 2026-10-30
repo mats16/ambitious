@@ -13,8 +13,8 @@ Example: a quarterly business review is not "a deck". It is "getting busy people
    - Find what is wrong → short sellers, forensic accountants, safety investigators, security red teams
    - Make it clear → editors, information designers, teachers
    - Make it hold up in use → operators, SREs, support staff who take the calls
-3. **Assemble a crew of 3–5 roles,** including at least one adversary whose job is to find why this fails. For each role, write the concrete actions they would perform on this work and the artifact each action produces.
-4. **Run the crew.** Do the actions, don't imitate the voice. The journalist writes the headline and the first paragraph; the editor cuts a third and says what was lost; the short seller writes the bear case; the forensic accountant ties every number back to its source. For large work, give each role to its own subagent in parallel, with the same model as yours, briefed with the role's actions and the raw work — not your opinion of it.
+3. **Assemble only the crew the work needs,** including an adversarial check for why this fails. Do not fill a fixed roster: for small work, perform the useful actions inline. For each role retained, write the concrete actions they would perform, the artifact each action produces, and why it is worth the extra effort.
+4. **Run the crew when execution is authorized.** For a proposal-only request, describe the actions and expected artifacts without performing them. When executing, do the actions, don't imitate the voice. The journalist writes the headline and the first paragraph; the editor cuts a third and says what was lost; the short seller writes the bear case; the forensic accountant ties every number back to its source. For large work, use parallel subagents only for genuinely independent actions whose contribution justifies their cost. Use the same model as yours, briefed with the role's actions and the raw work — not your opinion of it. Agreement among the crew is critique, not proof; validate factual or performance claims with evidence as described in `depth.md`.
 5. **Merge.** For each role: what changed because of it. Surface conflicts between roles to the user rather than averaging them away.
 
 ## Output
@@ -26,7 +26,9 @@ Verbs: <one sentence>
 |---|---|---|---|---|
 | … | … | … | … | … |
 Conflicts for the user: <…>
-First step: <…>
+First probe: <riskiest assumption → smallest test → continue/reconsider result>
+Extra effort/cost and user review burden: <estimate or unknown>
+Must preserve / stop boundary: <constraints and when to return for a decision>
 ```
 
 ## Pitfalls
@@ -34,3 +36,4 @@ First step: <…>
 - **Role-play is not range.** "As a journalist, I think this is compelling" adds nothing. If a role produced no artifact and changed nothing, drop it.
 - **Pick roles from the verbs, not from a stock list.** A crew that would fit any task is a sign step 1 was skipped.
 - **Keep the adversary honest.** The red team gets the same raw material, and its strongest objection goes in front of the user even if it is inconvenient.
+- **Use the short output for small tasks** as described in `SKILL.md`; more roles, agents, or review rounds are not evidence of better work.

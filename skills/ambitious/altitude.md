@@ -27,7 +27,9 @@ Work through these against the real task and material.
 
 Recommended level: <level>, because <…>
 Setup to ask for: <…>
-First step: <…>
+First probe: <riskiest assumption → smallest test → continue/reconsider result>
+Extra effort/cost and user review burden: <estimate or unknown>
+Must preserve / stop boundary: <constraints and when to return for a decision>
 ```
 
 ## Pitfalls
@@ -35,3 +37,5 @@ First step: <…>
 - **Too high is as bad as too low.** Recommend the highest level you can still verify with what is within reach, or can be within reach after one ask.
 - **The task as asked still gets done.** A higher altitude adds to it, or explains why it should be replaced; it never quietly skips it.
 - **Don't invent the outcome.** If the outcome is not in the conversation or material, ask the one question that would reveal it.
+- **Test before wiring the durable system.** Prefer a bounded replay or other cheap probe that could challenge the recommendation. State what outcome it would demonstrate, not just whether reviewers like it.
+- **Use the short output for small tasks** as described in `SKILL.md`; the ladder is a way to think, not a requirement to fill a table every time.

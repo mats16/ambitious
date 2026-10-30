@@ -16,8 +16,9 @@ Use periodically (daily or weekly), or when asked to look back over a body of wo
    - Evidence: the pointers, and a short quote of what was asked and what came out
    - Lens and signal
    - The bigger version: what the work could have been
-   - Proposal: the change that makes it likely next time — a rule or instruction, a skill, tool or data access, a check, a recurring job — with its cost
-   - Confidence: verified in the logs, or inferred
+   - Proposal: the change that makes it likely next time — a rule or instruction, a skill, tool or data access, a check, a recurring job — with its estimated extra cost and user review burden (or what is unknown)
+   - First probe: the smallest test of the proposal's riskiest assumption, the result that would support or challenge it, the constraints to preserve, and the stop/decision boundary. Propose the probe; do not run it or make changes from this review.
+   - Confidence: verified in the logs, or inferred. Separate evidence that the episode happened from evidence that the proposed improvement would work; reviewer agreement is not validation.
 5. **Follow up on the last review.** Which proposals were adopted, which signals came back anyway, which proposals to drop.
 6. **Output.** Write where the caller says (a scheduled prompt should give the path); otherwise reply in the chat. Do not apply changes to rules, settings, or code from a review. Propose them; the user decides.
 
@@ -30,7 +31,7 @@ Use periodically (daily or weekly), or when asked to look back over a body of wo
 | Altitude | Work ended at the artifact; nobody checked the outcome it was for | Close the loop on the outcome (was the decision made, did the metric move) |
 | Altitude | Manual steps by the user that the model could do with access | Ask for the access or data feed |
 | Depth | Estimates or claims made from vocabulary where data was reachable | Query or measure from the raw material |
-| Depth | "Looks good" with no independent check | An outside judge defined before the work |
+| Depth | "Looks good" or model agreement treated as proof, without supporting evidence | Define validation before the work; keep independent critique separate |
 | Depth | A target accepted as given when an order of magnitude better was plausible | Name an unreasonable target and plan what would have to be true |
 | Depth | A correction the user made that an expert in the field would have caught | The expert's check, built in |
 | Depth | A load-bearing assumption never re-derived | Reproduce it from raw data |

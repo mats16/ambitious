@@ -54,7 +54,18 @@ As lenses for a periodic log review (for example from a scheduled job):
 /ambitious:ambitious-review ~/.claude/projects/<project>/ の直近 7 日の会話を振り返り、結果を reviews/ambitious_<YYYYMMDD>.md に書いて
 ```
 
-`ambitious-review` only proposes changes (rules, skills, access, checks); it does not apply them.
+`ambitious-review` only proposes changes (rules, skills, access, checks); it does not apply them or run the proposed probes.
+
+## What a recommendation includes
+
+- **Validation, separate from critique.** Tests, measurements, held-out data, or observed user behavior support a claim. Independent reviewers find blind spots; another model's agreement alone is not proof. Planned checks and proxy limits stay explicit.
+- **A stretch target with constraints.** Aim beyond the default without sacrificing correctness, privacy, compatibility, or the user's stated limits. Measure an unknown baseline instead of inventing one; not every task needs a numerical target.
+- **A cheap first probe.** Test the assumption most likely to sink the recommendation before committing to a larger build. State what result would support the plan or make you reconsider it.
+- **A bounded attempt.** Make extra effort/cost, user review burden, and the stop/decision boundary visible. An honest miss is useful; silently lowering the target or extending the budget is not.
+
+Small tasks get a few lines, not a filled-out report. Use only the roles and agents that change the result; there is no fixed crew size. These safeguards also apply when running one lens alone. Scope changes and new permissions still need approval.
+
+Behavioral regression cases and an old/new comparison procedure are in [tests/scenarios.md](tests/scenarios.md). They are an evaluation checklist, not a claim that model behavior has been tested.
 
 ## 日本語の概要
 
@@ -65,7 +76,9 @@ As lenses for a periodic log review (for example from a scheduled job):
 - **range** — 名詞を動詞に言い換え、その動詞が得意な分野の役（反対役を含む）に、実際の仕事をさせる。
 - **ambitious-review** — 3 つの目でログを定期的に振り返り、仕事が小さく留まったところと、次に大きくするための直しを挙げる。
 
-どれも提案までで、勝手に範囲を広げない。
+どれも勝手に範囲を広げない。通常の `ambitious` は選択を返し、事前に実行を任されていれば最初の試行に進む。`ambitious-review` は提案までで、試行も実行しない。
+
+提案には、批評と区別した検証方法、目標のために犠牲にしない制約、最も危険な前提を確かめる小さな試行、追加の費用・確認負担・判断を返す条件を添える。小さい課題は数行で返す。
 
 ## License
 
