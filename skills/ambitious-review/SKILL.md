@@ -16,8 +16,9 @@ Use periodically (daily or weekly), or when asked to look back over a body of wo
    - Evidence: the pointers, and a short quote of what was asked and what came out
    - Lens and signal
    - The bigger version: what the work could have been
-   - Proposal: the change that makes it likely next time — a rule or instruction, a skill, tool or data access, a check, a recurring job — with its cost
-   - Confidence: verified in the logs, or inferred
+   - Proposal: the change that makes it likely next time — a rule or instruction, a skill, tool or data access, a check, a recurring job — with its estimated extra cost and user review burden (or what is unknown)
+   - First probe: set the ambitious outcome first, then name the smallest informative test of its riskiest assumption, what each result would teach, and the next experiment or investment. Distinguish actual boundaries from assumptions worth changing, and respect explicit resource limits. Propose the probe; do not run it or make changes from this review.
+   - Confidence: verified in the logs, or inferred. Separate evidence that the episode happened from evidence that the proposed improvement would work; reviewer agreement is not validation.
 5. **Follow up on the last review.** Which proposals were adopted, which signals came back anyway, which proposals to drop.
 6. **Output.** Write where the caller says (a scheduled prompt should give the path); otherwise reply in the chat. Do not apply changes to rules, settings, or code from a review. Propose them; the user decides.
 
@@ -30,13 +31,14 @@ Use periodically (daily or weekly), or when asked to look back over a body of wo
 | Altitude | Work ended at the artifact; nobody checked the outcome it was for | Close the loop on the outcome (was the decision made, did the metric move) |
 | Altitude | Manual steps by the user that the model could do with access | Ask for the access or data feed |
 | Depth | Estimates or claims made from vocabulary where data was reachable | Query or measure from the raw material |
-| Depth | "Looks good" with no independent check | An outside judge defined before the work |
+| Depth | "Looks good" or model agreement treated as proof, without supporting evidence | Define validation before the work; keep independent critique separate |
 | Depth | A target accepted as given when an order of magnitude better was plausible | Name an unreasonable target and plan what would have to be true |
 | Depth | A correction the user made that an expert in the field would have caught | The expert's check, built in |
 | Depth | A load-bearing assumption never re-derived | Reproduce it from raw data |
 | Range | The goal stated as a noun ("a deck", "a report") and built to the noun | Restate as verbs; build to the verbs |
 | Range | Reviews always come from the same kind of eye | Add a missing crew role, especially an adversary |
 | Range | One method used for jobs that need different ones | Borrow the method from the field that owns that verb |
-| Self-efficacy | Asks shrunk or hedged up front; "can't" claimed but never tried; stopped after one failed attempt | Try the hard version first; record what blocked it |
+| Self-efficacy | Asks shrunk or hedged up front; "can't" claimed but never tried; stopped after one failed attempt | Try the hard version first; change the method before abandoning the target; record what blocked it |
+| Self-efficacy | Current tools, compatibility, or an invented budget treated as an unchangeable ceiling | Separate explicit limits from assumptions; propose the setup or next investment that unlocks the higher outcome |
 
 The signals table also works as a checklist for other periodic jobs (for example a job that tidies rules from conversation logs): pass it the table and the finding format above.

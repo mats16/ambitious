@@ -54,7 +54,22 @@ As lenses for a periodic log review (for example from a scheduled job):
 /ambitious:ambitious-review ~/.claude/projects/<project>/ の直近 7 日の会話を振り返り、結果を reviews/ambitious_<YYYYMMDD>.md に書いて
 ```
 
-`ambitious-review` only proposes changes (rules, skills, access, checks); it does not apply them.
+`ambitious-review` only proposes changes (rules, skills, access, checks); it does not apply them or run the proposed probes.
+
+## What a recommendation includes
+
+**Aim boldly, experiment concretely, report honestly. Respect authority, but do not mistake today's methods for the limit.**
+
+- **An outcome beyond the request.** The original task is the floor, not the ceiling. Propose the higher outcome or redesigned process; execute within the authority the user has granted.
+- **A hard target and a search for the method.** Treat the target as reachable. After a failed method, learn and try a materially different approach rather than quietly lowering the target. Unknown baselines need measurement, not invented numbers or a smaller ambition.
+- **Actual boundaries, not inherited assumptions.** Respect permissions, privacy, and explicit user/project limits. The current API, architecture, workflow, or toolset can be challenged; propose changes and obtain approval where required. Do not claim a broken result is complete.
+- **Efficient learning toward the bold goal.** Choose the ambition first, then test its key assumption with the smallest informative experiment. Make the learning step small, not the outcome.
+- **Checkpoints that advance the attempt.** Show material extra effort/cost and user review burden. Continue authorized work through learning checkpoints; at an explicit limit or need for new authority, return with evidence and the next experiment or investment that could unlock the target.
+- **Validation, separate from critique.** Tests, measurements, held-out data, or observed user behavior support a claim. Independent reviewers find blind spots; another model's agreement alone is not proof. Planned checks and proxy limits stay explicit.
+
+Small tasks get a few lines, not a filled-out report. Scale the crew to the outcome, not a fixed roster or only the cheapest methods. These principles also apply when running one lens alone. A missing estimate is not a reason to invent an approval gate; a proposal-only request still stays a proposal.
+
+Behavioral regression cases and an old/new comparison procedure are in [tests/scenarios.md](tests/scenarios.md). They are an evaluation checklist, not a claim that model behavior has been tested.
 
 ## 日本語の概要
 
@@ -65,7 +80,9 @@ As lenses for a periodic log review (for example from a scheduled job):
 - **range** — 名詞を動詞に言い換え、その動詞が得意な分野の役（反対役を含む）に、実際の仕事をさせる。
 - **ambitious-review** — 3 つの目でログを定期的に振り返り、仕事が小さく留まったところと、次に大きくするための直しを挙げる。
 
-どれも提案までで、勝手に範囲を広げない。
+狙いは大胆に、試行は具体的に、結果は正直に。提案は元の成果物を超えてよいが、実行は与えられた権限の範囲で行う。通常の `ambitious` は選択を返し、事前に実行を任されていれば最初の試行に進む。`ambitious-review` は提案までで、試行も実行しない。
+
+権限・プライバシー・明示された上限は守る。一方、今の API や構成、道具を自動的に限界としない。高い目標を先に置き、実現を左右する前提を小さく試す。最初の失敗では目標を下げず、手法を変える。学習の節目では次の実験へ進み、明示された資源の上限や新しい権限が必要な点では、突破に必要な次の一手を返す。検証と批評は区別し、小さい課題は数行で返す。
 
 ## License
 
