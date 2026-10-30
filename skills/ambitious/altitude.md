@@ -18,9 +18,9 @@ Work through these against the real task and material.
 
 ```markdown
 ### Altitude: <task>
-| Level | Version of the work | Can we verify it here? |
+| Level | Version of the work | How would we verify it, and what setup would that need? |
 |---|---|---|
-| Task (as asked) | … | yes |
+| Task (as asked) | … | <check and setup> |
 | Outcome | … | … |
 | Durable system | … | … |
 | Process redesign | … | … |
@@ -28,14 +28,15 @@ Work through these against the real task and material.
 Recommended level: <level>, because <…>
 Setup to ask for: <…>
 First probe: <riskiest assumption → smallest test → continue/reconsider result>
-Extra effort/cost and user review burden: <estimate or unknown>
-Must preserve / stop boundary: <constraints and when to return for a decision>
+Material effort/cost and user review burden: <estimate or unknown>
+Actual boundaries / assumptions to challenge: <explicit limits vs current choices>
+Next checkpoint: <what to learn and the next experiment/investment; respect explicit limits>
 ```
 
 ## Pitfalls
 
-- **Too high is as bad as too low.** Recommend the highest level you can still verify with what is within reach, or can be within reach after one ask.
+- **Today's setup is not the ceiling.** Recommend the highest useful outcome you can make concrete, with a path to the access and validation it needs. If it is not executable here yet, name the setup and the first experiment that could unlock it; do not automatically retreat to a smaller task. Vague aspirations without an observable outcome are not higher altitude.
 - **The task as asked still gets done.** A higher altitude adds to it, or explains why it should be replaced; it never quietly skips it.
 - **Don't invent the outcome.** If the outcome is not in the conversation or material, ask the one question that would reveal it.
-- **Test before wiring the durable system.** Prefer a bounded replay or other cheap probe that could challenge the recommendation. State what outcome it would demonstrate, not just whether reviewers like it.
+- **Aim high, then test the key assumption.** A replay or prototype should test the ambitious outcome, not make an easy local improvement the ceiling. Start with the smallest experiment that teaches something decisive; a larger build may be the next necessary experiment. State what it would demonstrate, not just whether reviewers like it.
 - **Use the short output for small tasks** as described in `SKILL.md`; the ladder is a way to think, not a requirement to fill a table every time.

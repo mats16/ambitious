@@ -11,7 +11,7 @@ Work through these against the real task and material. Run the instruments you n
 1. **Who is the best in the world at this, and what would they do differently** from what is planned now?
 2. **Raw material.** What would they start from? Primary data, raw logs, source code, the original documents, the database — not summaries, dashboards, or what someone said in a meeting.
 3. **Instruments.** What methods and tools would they use (SQL, statistics, profiling, simulation, controlled experiments, formal checks)? Which can you run here within the authorized scope? Use those, and name the access or approval needed for the rest.
-4. **Stretch target with constraints.** Name a target well past a competent default, and ask what would have to be true to reach it. An order-of-magnitude improvement can be useful (a 200 ms load where 5 s was accepted), but is not a quota for every task. Use an observed baseline; if it is unknown, measuring it is the first probe. Do not invent precision for qualitative work: define an observable pass/fail criterion instead. Mark the target as stretch, name what it must preserve (correctness, privacy, compatibility, or the user's deadline), and set an effort/budget boundary at which to report results and ask for a decision rather than silently lowering the target or trying indefinitely.
+4. **Set a hard target and search for the method.** Aim well past a competent default, and treat the target as reachable: what would have to be true? An order-of-magnitude improvement can be useful (a 200 ms load where 5 s was accepted), but is not a quota for every task. Use an observed baseline or say it is unknown; measure it as part of the work, not as a prerequisite to imagining the target. For qualitative work, define an observable pass/fail criterion instead of inventing precision. Separate actual boundaries (permissions, privacy, explicit user limits) from choices worth challenging (the current API, architecture, tools). Do not assume compatibility is mandatory unless the user or project requires it; propose an alternative when changing it unlocks a better outcome. Keep claims of completion honest even when scratch experiments fail.
 5. **Re-derive an assumption.** List what the current answer rests on. Pick the most load-bearing one and reproduce it from raw data ("try to reproduce that from the raw data"). Say whether it held.
 6. **New knowledge.** What could be learned here that nobody knows yet? An earlier signal of churn than the one in use; a simulation that reproduces the last year from the logs and can then test changes before they ship.
 7. **Validation and independent critique.** Define them before doing the work, not after:
@@ -25,14 +25,15 @@ Work through these against the real task and material. Run the instruments you n
 Expert: <who> would <do what differently>
 Raw material: <…>  Instruments: <…> (planned: <…>; ran: <which and result, or not run>)
 Stretch target: <observable target> vs baseline <measured value, or unknown> — what must be true: <…>
-Must preserve: <constraints that cannot be traded for the target>
+Actual boundaries: <permissions, privacy, explicit user/project limits>
+Assumptions to challenge: <current choices that need not remain fixed>
 Assumption to re-derive: <assumption> → <held / did not hold with evidence, or not yet tested>
 New knowledge to produce: <…>
 Validation: <evidence and pass/fail criterion; planned or observed; proxy limits>
 Independent critique: <review if useful; what it can and cannot establish>
-First probe: <riskiest assumption → smallest test → continue/reconsider result>
-Extra effort/cost and user review burden: <estimate or unknown>
-Stop or return for a decision when: <budget, constraint, or evidence boundary>
+First probe: <bold target's riskiest assumption → smallest informative test → next move>
+Material effort/cost and user review burden: <estimate or unknown>
+Next checkpoint: <learning, alternative method, and next experiment/investment; respect explicit limits>
 ```
 
 ## Pitfalls
@@ -40,6 +41,6 @@ Stop or return for a decision when: <budget, constraint, or evidence boundary>
 - **Depth is not length.** Cut anything that is more of the same.
 - **Name the instrument, then use it.** During authorized execution, listing SQL but never running a query when the data is reachable is still vocabulary. In a proposal, make the intended query and check concrete without claiming they ran.
 - **Agreement is not validation.** Neither "I checked and it looks right" nor another model agreeing proves the claim. Preserve useful critique, but report actual evidence separately.
-- **A stretch target is not a blank check.** Stop at the agreed boundary and report an honest miss, the evidence, and the options. Do not weaken a test, sacrifice a constraint, or quietly extend the budget to hit the target.
+- **A failed method is not an impossible target.** Diagnose the failure and try a different instrument, decomposition, or hypothesis within the authorized work. Keep the target unless evidence or the user warrants changing it; mere difficulty does not. At an explicit resource limit, report the measured result and what next experiment or investment could break through, without exceeding that limit or weakening acceptance criteria.
 - **Use the short output for small tasks** as described in `SKILL.md`; do not fill this template just to make the work look deeper.
 - **Ask before reaching for data you don't have access to,** or that costs money or touches production.

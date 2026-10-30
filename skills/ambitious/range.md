@@ -13,8 +13,8 @@ Example: a quarterly business review is not "a deck". It is "getting busy people
    - Find what is wrong → short sellers, forensic accountants, safety investigators, security red teams
    - Make it clear → editors, information designers, teachers
    - Make it hold up in use → operators, SREs, support staff who take the calls
-3. **Assemble only the crew the work needs,** including an adversarial check for why this fails. Do not fill a fixed roster: for small work, perform the useful actions inline. For each role retained, write the concrete actions they would perform, the artifact each action produces, and why it is worth the extra effort.
-4. **Run the crew when execution is authorized.** For a proposal-only request, describe the actions and expected artifacts without performing them. When executing, do the actions, don't imitate the voice. The journalist writes the headline and the first paragraph; the editor cuts a third and says what was lost; the short seller writes the bear case; the forensic accountant ties every number back to its source. For large work, use parallel subagents only for genuinely independent actions whose contribution justifies their cost. Use the same model as yours, briefed with the role's actions and the raw work — not your opinion of it. Agreement among the crew is critique, not proof; validate factual or performance claims with evidence as described in `depth.md`.
+3. **Assemble only the crew the work needs,** including an adversarial check for why this fails. Do not fill a fixed roster: for small work, perform the useful actions inline. For each role retained, write the concrete actions they would perform, the artifact each action produces, and what distinct method or hypothesis it brings. Choose the crew for the best outcome, not just the cheapest review.
+4. **Run the crew when execution is authorized.** For a proposal-only request, describe the actions and expected artifacts without performing them. When executing, do the actions, don't imitate the voice. The journalist writes the headline and the first paragraph; the editor cuts a third and says what was lost; the short seller writes the bear case; the forensic accountant ties every number back to its source. For large work, use parallel subagents for genuinely independent actions that bring distinct methods or test competing hypotheses. Scale the effort to the outcome; do not require a known payoff before trying an unfamiliar but well-motivated field. Use the same model as yours, briefed with the role's actions and the raw work — not your opinion of it. Agreement among the crew is critique, not proof; validate factual or performance claims with evidence as described in `depth.md`.
 5. **Merge.** For each role: what changed because of it. Surface conflicts between roles to the user rather than averaging them away.
 
 ## Output
@@ -27,8 +27,9 @@ Verbs: <one sentence>
 | … | … | … | … | … |
 Conflicts for the user: <…>
 First probe: <riskiest assumption → smallest test → continue/reconsider result>
-Extra effort/cost and user review burden: <estimate or unknown>
-Must preserve / stop boundary: <constraints and when to return for a decision>
+Material effort/cost and user review burden: <estimate or unknown>
+Actual boundaries / assumptions to challenge: <explicit limits vs current choices>
+Next checkpoint: <what changed, what to try next, and any new authority needed>
 ```
 
 ## Pitfalls
